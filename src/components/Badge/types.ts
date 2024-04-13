@@ -8,6 +8,7 @@ export const variants = [
   'success',
 ] as const;
 export type Variant = (typeof variants)[number];
+
 export const sizes = ['sm', 'md', 'xl'] as const;
 export type Size = (typeof sizes)[number];
 
