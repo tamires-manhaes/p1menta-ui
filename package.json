@@ -2,7 +2,7 @@
   "name": "jarvis-ui",
   "description": "My component Library",
   "repository": {
-    "url": "git@github.com:tamires-manhaes/jarvis-ui.git"
+    "url": "git+ssh://git@github.com/tamires-manhaes/jarvis-ui.git"
   },
   "author": {
     "name": "Tamires Manhaes",
@@ -24,17 +24,20 @@
     "storybook": "storybook dev -p 6006",
     "build:storybook": "storybook build",
     "build:tailwind": "npx tailwindcss -i ./src/theme/tokens.css -o ./src/theme/theme.css --watch",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token="
   },
   "dependencies": {
+    "@radix-ui/react-select": "^2.0.0",
     "@radix-ui/themes": "^3.0.1",
+    "class-variance-authority": "^0.7.0",
     "lucide": "^0.363.0",
-    "lucide-react": "^0.363.0",
+    "lucide-react": "^0.367.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@andylacko/vite-svg-react-loader": "^3.0.16",
     "@chromatic-com/storybook": "^1.2.25",
     "@storybook/addon-essentials": "^8.0.5",
     "@storybook/addon-interactions": "^8.0.5",
@@ -47,11 +50,13 @@
     "@storybook/react-vite": "^8.0.5",
     "@storybook/test": "^8.0.5",
     "@storybook/theming": "^8.0.5",
+    "@types/node": "^20.12.7",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@typescript-eslint/eslint-plugin": "^7.2.0",
     "@typescript-eslint/parser": "^7.2.0",
     "@vitejs/plugin-react": "^4.2.1",
+    "chromatic": "^11.3.0",
     "clsx": "^2.1.0",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
@@ -65,5 +70,9 @@
     "tailwindcss": "^3.4.3",
     "typescript": "^5.2.2",
     "vite": "^5.2.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/tamires-manhaes/jarvis-ui/issues"
+  },
+  "homepage": "https://github.com/tamires-manhaes/jarvis-ui#readme"
 }
