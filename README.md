@@ -2,6 +2,8 @@
 
 Bem-vindo à documentação da Jarvis UI! Esta biblioteca foi desenvolvida com Vite, React, TypeScript, Tailwind CSS, Shadcn e Radix. Aqui você encontrará informações sobre como utilizar os componentes disponíveis, instalação, exemplos e muito mais.
 
+preview (here)[https://660e95d75bccb0aace034cf9-owxaxjusfb.chromatic.com/]
+
 ## Instalação
 
 Para instalar a biblioteca em seu projeto, você pode utilizar o npm ou o yarn:
