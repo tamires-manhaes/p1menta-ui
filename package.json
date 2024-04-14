@@ -25,7 +25,8 @@
     "build:storybook": "storybook build",
     "build:tailwind": "npx tailwindcss -i ./src/theme/tokens.css -o ./src/theme/theme.css --watch",
     "build-storybook": "storybook build",
-    "chromatic": "npx chromatic --project-token="
+    "chromatic:publish": "npx chromatic --project-token=${CHROMATIC_PROJECT_TOKEN}",
+    "npm:publish": "npm version patch && npm publish"
   },
   "dependencies": {
     "@radix-ui/react-icons": "^1.3.0",
