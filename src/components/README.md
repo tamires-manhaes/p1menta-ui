@@ -1,17 +1,17 @@
 ## components:
 
 - [x] Alert
-- [] Avatar
+- [ ] Avatar
 - [x] Badge
 - [x] Button
-- [] Calendar
-- [] Card
+- [ ] Calendar
+- [ ] Card
 - [x] Checkbox
-- [] Datepicker
-- [] Dialog
-- [] Pagination
+- [ ] Datepicker
+- [ ] Dialog
+- [ ] Pagination
 - [x] Select
 - [x] Switch
-- [] Tabs
+- [ ] Tabs
 - [x] Tag
 - [x] Textarea
