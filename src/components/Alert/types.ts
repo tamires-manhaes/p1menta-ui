@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ReactNode } from 'react';
 
 export const variants = [
   'default',
@@ -14,4 +14,5 @@ export interface AlertProps {
   icon?: ReactNode;
   title: string;
   description: string;
+  showDescription?: boolean;
 }
