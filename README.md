@@ -1,30 +1,63 @@
-# React + TypeScript + Vite
+# Jarvis UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bem-vindo à documentação da Jarvis UI! Esta biblioteca foi desenvolvida com Vite, React, TypeScript, Tailwind CSS, Shadcn e Radix. Aqui você encontrará informações sobre como utilizar os componentes disponíveis, instalação, exemplos e muito mais.
 
-Currently, two official plugins are available:
+## Instalação
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Para instalar a biblioteca em seu projeto, você pode utilizar o npm ou o yarn:
 
-## Expanding the ESLint configuration
+```bash
+npm install @jarvis-ui
+# ou
+yarn add @jarvis-ui
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Utilização
+
+Após instalar a biblioteca, você pode importar os componentes conforme necessário em seus arquivos React:
+
+import React from 'react';
+import { Button, Card } from '@jarvis-ui';
+
+```jsx
+const App = () => {
+  return (
+    <div>
+      <Card>
+        <h2>Meu Card</h2>
+        <p>Conteúdo do card...</p>
+        <Button>Meu Botão</Button>
+      </Card>
+    </div>
+  );
+};
+
+export default App;
+```
+
+## Componentes Disponíveis
+
+- [x] Alert
+- [] Avatar
+- [x] Badge
+- [x] Button
+- [] Calendar
+- [] Card
+- [x] Checkbox
+- [] Datepicker
+- [] Dialog
+- [] Pagination
+- [x] Select
+- [x] Switch
+- [] Tabs
+- [x] Tag
+- [x] Textarea
+
+## Contribuindo
+
+Se você deseja contribuir com a biblioteca, sinta-se à vontade para abrir pull requests no repositório do GitHub. Todas as contribuições são bem-vindas!
+
+## Licença
+
+Esta biblioteca é distribuída sob a licença MIT. Consulte o arquivo LICENSE para obter mais informações.
