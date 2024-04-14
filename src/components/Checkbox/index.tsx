@@ -1,27 +1,31 @@
-import { FunctionComponent } from 'react';
-import { CheckboxProps } from './types';
+import * as React from 'react';
+import * as CheckboxPrimitive from '@radix-ui/react-checkbox';
+import { CheckIcon } from '@radix-ui/react-icons';
 
-export const Checkbox: FunctionComponent<CheckboxProps> = ({
-  label,
-  name,
-  onChange,
-  showLabel,
-  value,
-}) => {
-  return (
-    <div className="flex items-center flex-wrap" id="jarvis_checkbox">
-      <input
-        className="mr-2 border-brand-600 border-1 p-2  w-4 h-4"
-        type="checkbox"
-        name={name}
-        value={value}
-        onChange={onChange}
-      />
-      {showLabel && (
-        <label id={name} className="font-semibold">
-          {label}
-        </label>
-      )}
-    </div>
-  );
-};
+import { cn } from '@/utils/cn';
+
+const Checkbox = React.forwardRef<
+  React.ElementRef<typeof CheckboxPrimitive.Root>,
+  React.ComponentPropsWithoutRef<typeof CheckboxPrimitive.Root>
+>(({ className, name, onChange, value, ...props }, ref) => (
+  <CheckboxPrimitive.Root
+    ref={ref}
+    className={cn(
+      'peer h-4 w-4 shrink-0 rounded-sm border border-primary shadow focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-brand-500 data-[state=checked]:text-primary-foreground',
+      className,
+    )}
+    {...props}
+    onChange={onChange}
+    value={value}
+    name={name}
+  >
+    <CheckboxPrimitive.Indicator
+      className={cn('flex items-center justify-center text-current')}
+    >
+      <CheckIcon color="#fff" className="h-4 w-4" />
+    </CheckboxPrimitive.Indicator>
+  </CheckboxPrimitive.Root>
+));
+Checkbox.displayName = CheckboxPrimitive.Root.displayName;
+
+export { Checkbox };

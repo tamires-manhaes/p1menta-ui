@@ -12,9 +12,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    label: 'label',
     name: 'checkbox',
-    showLabel: true,
     onChange: () => console.log('changed'),
     value: '+1',
   },
