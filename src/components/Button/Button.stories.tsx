@@ -10,8 +10,6 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-console.log(meta);
-
 export const Primary: Story = {
   args: {
     label: 'Button',
