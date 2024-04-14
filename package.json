@@ -9,7 +9,7 @@
     "email": "tamiresmanhaes4@gmail.com",
     "url": "https://tamires.dev"
   },
-  "private": true,
+  "private": false,
   "version": "1.0.1",
   "main": "dist/index.js",
   "files": [
