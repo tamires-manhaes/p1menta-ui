@@ -1,6 +1,6 @@
 {
   "name": "pepper-ui",
-  "private": true,
+  "private": false,
   "description": "My component Library",
   "repository": {
     "url": "git+ssh://git@github.com/tamires-manhaes/jarvis-ui.git"
