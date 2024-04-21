@@ -7,13 +7,14 @@ export const Button: FunctionComponent<ButtonProps> = ({
   startIcon,
   endIcon,
   disabled,
-  variant: variantProp = 'primary',
+  variant,
   label,
   onClick,
   fullWidth,
   classNames,
+  children
 }) => {
-  const variantStyles = variantDict(variantProp);
+  const variantStyles = variantDict(variant);
 
   return (
     <button
@@ -32,9 +33,10 @@ export const Button: FunctionComponent<ButtonProps> = ({
           {startIcon}
         </span>
       )}
-      <span className={cn(classNames, `text-4 ${variantStyles.label}`)}>
+      {label ? <span className={cn(classNames, `text-4 ${variantStyles.label}`)}>
         {label}
-      </span>
+      </span> : <>{children}</>}
+      
       {endIcon && (
         <span
           className="jarvis-button__icon jarvis-button__endIcon"

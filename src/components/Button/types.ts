@@ -18,4 +18,5 @@ export interface ButtonProps {
   endIcon?: ReactNode;
   classNames?: string;
   variant: Variant;
+  children?: ReactNode
 }
