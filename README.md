@@ -1,4 +1,4 @@
-# Jarvis UI
+# P1menta UI
 
 Bem-vindo à documentação da Jarvis UI! Esta biblioteca foi desenvolvida com Vite, React, TypeScript, Tailwind CSS, Shadcn e Radix. Aqui você encontrará informações sobre como utilizar os componentes disponíveis, instalação, exemplos e muito mais.
 
