@@ -10,7 +10,7 @@
     "email": "tamiresmanhaes4@gmail.com",
     "url": "https://tamires.dev"
   },
-  "version": "1.0.7",
+  "version": "1.0.8",
   "type": "module",
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.es.js",
