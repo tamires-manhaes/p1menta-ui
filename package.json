@@ -3,7 +3,7 @@
   "private": false,
   "description": "My component Library",
   "repository": {
-    "url": "git+ssh://git@github.com/tamires-manhaes/jarvis-ui.git"
+    "url": "git@github.com:tamires-manhaes/p1menta-ui.git"
   },
   "author": {
     "name": "Tamires Manhaes",
