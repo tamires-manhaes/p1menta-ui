@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react';
 import { ButtonProps } from './types';
-import { cn } from '../../helpers/cn';
+import { cn } from '../../utils/cn';
 import { variantDict } from './utils';
 
 export const Button: FunctionComponent<ButtonProps> = ({

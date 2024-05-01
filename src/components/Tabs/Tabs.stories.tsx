@@ -9,7 +9,7 @@ const meta = {
 
 export default meta;
 
-const Template: StoryFn = (args) => {
+const Template: StoryFn = () => {
   return (
     <Tabs defaultValue="account" className="w-[400px]">
       <TabsList>

@@ -1,7 +1,7 @@
 import { FunctionComponent } from 'react';
 import { AlertProps } from './types';
 import { variantDict } from './utils';
-import { cn } from '../../helpers/cn';
+import { cn } from '../../utils/cn';
 
 export const Alert: FunctionComponent<AlertProps> = ({
   title,
